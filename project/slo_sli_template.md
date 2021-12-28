@@ -1,8 +1,8 @@
 # API Service
 
-| Category     | SLI | SLO                                                                                                         |
-|--------------|-----|-------------------------------------------------------------------------------------------------------------|
-| Availability |     | 99%                                                                                                         |
-| Latency      |     | 90% of requests below 100ms                                                                                 |
-| Error Budget |     | Error budget is defined at 20%. This means that 20% of the requests can fail and still be within the budget |
-| Throughput   |     | 5 RPS indicates the application is functioning                                                              |
+| Category     | SLI                                                                                                                                                                                        | SLO                                                                                                         |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| Availability | It represent the availability of the application. we can calculate it by the following formula SLI =  no. of successful requests / total no. of requests                                   | 99%                                                                                                         |
+| Latency      | Latency is how fast you want your application to respond. we can represent this as SLI =  90th percentile latency over a 10 min period.                                                    | 90% of requests below 100ms                                                                                 |
+| Error        | It represents that How much your infrastructure can be down? we can calculate error budget by the following formula SLI = the number of error requests/total number of requests in budget. | Error budget is defined at 20%. This means that 20% of the requests can fail and still be within the budget |
+| Throughput   | It measures how many loads your site can handle. We can represent this as SLI =  total number of requests over a period of time                                                            | 5 RPS indicates the application is functioning                                                              |

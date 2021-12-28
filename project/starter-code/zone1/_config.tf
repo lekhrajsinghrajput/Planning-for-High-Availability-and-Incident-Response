@@ -1,8 +1,9 @@
 terraform {
    backend "s3" {
-     bucket = "udacity-tf-<user_name>"
+     bucket = "udacity-tf-lekhraj"
      key    = "terraform/terraform.tfstate"
      region = "us-east-2"
+     profile = "udacity"
    }
  }
 
@@ -12,9 +13,11 @@ terraform {
    default_tags {
      tags = local.tags
    }
+   profile = "udacity"
  }
 
  provider "aws" {
   alias  = "usw1"
   region = "us-west-1"
+  profile = "udacity"
 }
