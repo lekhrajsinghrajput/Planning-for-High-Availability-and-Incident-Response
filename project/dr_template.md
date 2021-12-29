@@ -38,3 +38,5 @@ More detailed descriptions of each asset identified above.
 ## Steps:
 - Create application load balancers cluster. This way you can have multiple instances behind 1 IP in a region. During a failover scenario, you would fail over the single DNS entry at your DNS provider to point to the DR site. This is much more intelligent than pointing to a single instance of a web server.
 - Have a replicated database and perform a failover on the database. While a backup is good and necessary, it is time-consuming to restore from backup. In this DR step, you would have already configured replication and would perform the database failover. Ideally, your application would be using a generic CNAME DNS record and would just connect to the DR instance of the database.
+- Have a backup S3 bucket that will replicate the original S3 bucket for storing the terraform state and rds backup.
+- Have two ECR repo's in different regions, in case of failure point to the different ECR repo in another region.
