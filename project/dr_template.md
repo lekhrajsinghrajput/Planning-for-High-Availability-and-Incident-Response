@@ -20,14 +20,14 @@
 
 ### Descriptions
 More detailed descriptions of each asset identified above.
-**EC2 Instances**: These instances will be used for running our application code. 
-**ECR(elastic container registery)**: It will be used for storing the docker images related to our application and will be used in *kubernetes cluster*.
-**Load Balancer**: Load balancers will be used to distribute the load on application servers.
-**Kubernetes Cluster**: Kubernetes cluster will be used for running the application and the monitoring stack in containerized form(pods).
-**Monitoring stack**: This will monitor application servers and will be used get the system matrix.
-**RDS Cluster**:  will be used to store our application data.
-**S3**: These buckets will be used for storing the backups of db's and to store the state of our terraform code.
-**Github Repo**: It will be used to store the application code as well as the terraform code to spin up infrastructure.
+- **EC2 Instances**: These instances will be used for running our application code. 
+- **ECR(elastic container registery)**: It will be used for storing the docker images related to our application and will be used in *kubernetes cluster*.
+- **Load Balancer**: Load balancers will be used to distribute the load on application servers.
+- **Kubernetes Cluster**: Kubernetes cluster will be used for running the application and the monitoring stack in containerized form(pods).
+- **Monitoring stack**: This will monitor application servers and will be used get the system matrix.
+- **RDS Cluster**:  will be used to store our application data.
+- **S3**: These buckets will be used for storing the backups of db's and to store the state of our terraform code.
+- **Github Repo**: It will be used to store the application code as well as the terraform code to spin up infrastructure.
 ## DR Plan
 ### Pre-Steps:
 - Create a bucket in each region to store the terraform state.
