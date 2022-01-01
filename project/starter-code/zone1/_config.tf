@@ -1,6 +1,6 @@
 terraform {
    backend "s3" {
-     bucket = "udacity-tf-lekhraj"
+     bucket = "udacity-tf-lekhraj-zone1"
      key    = "terraform/terraform.tfstate"
      region = "us-east-2"
      profile = "udacity"
