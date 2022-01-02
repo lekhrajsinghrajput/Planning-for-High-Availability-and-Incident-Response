@@ -8,7 +8,7 @@
 
 ## Throughput
 ### Successful requests per second
-```sum(rate(flask_http_request_total{status=~"2.."}[5m]))```
+```sum(rate(flask_http_request_total{status=~"200"}[5m]))```
 
 ## Error Budget - Remaining Error Budget
 ### The error budget is 20%
